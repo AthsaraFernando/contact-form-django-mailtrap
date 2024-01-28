@@ -1,5 +1,48 @@
+
 # Contact-form-django-mailtrap
-! NOTE ! - !
-Initiate Django properly.
-1) EMAIL_HOST_USER = '################' #replace change with the real, (go to mailtrap)
-2) EMAIL_HOST_PASSWORD = '############' #replace change with the real, (go to mailtrap)
+
+This can be used to send emails using any SMTP server, like mailtrap,Gmail etc. You may need to setup a virtual environment if you run this on a host.
+
+
+## Django Initializing Commands 
+
+Command to create the virtual environment (don't need to use this)
+
+```bash
+    django-admin startproject myproject .
+```
+Command to run (needed)
+
+```bash
+    python manage.py runserver
+```
+## Installation
+
+Install the relavent libraries.
+
+
+## When using with Mailtrap
+
+Replace below lines in myproject>settings.py 
+, go to mailtrap inbox in email testing and find the SMTP details:
+
+- EMAIL_HOST_USER = '######'
+- EMAIL_HOST_PASSWORD = '#########'
+
+## When using with Gmail
+
+Replace below lines in myproject>settings.py 
+,  don't put email password EMAIL_HOST_PASSWORD instead use app password. to make an app password fo to google mage our google account > security > app password:
+
+- EMAIL_HOST = 'smtp.gmail.com'
+- EMAIL_PORT = 587  # Use 587 for TLS, or 465 for SSL
+- EMAIL_HOST_USER = 'sendersmail@gmail.com'
+- EMAIL_HOST_PASSWORD = 'XXXXXXXXX'
+
+
+
+## Tech Stack
+
+Django, HTML, python
+
+

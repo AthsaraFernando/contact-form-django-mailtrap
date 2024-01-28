@@ -20,6 +20,11 @@ Command to run (needed)
 
 Install the relavent libraries.
 
+## Sender and Reciever
+
+- Sender is the SMTP email Host that we mention in the myproject>settings.py.
+- Reciever is the ['JohnDoe@gmail.com'], # Send to (your admin email) . [Not for Mailtrap]
+- in Mailtrap no matter what the reciever is it will send to the mailtral inbox.
 
 ## When using with Mailtrap
 
